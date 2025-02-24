@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F7F7F7;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  color: #2D9CDB;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  background-color: #2D9CDB;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #FF4500;
+  transform: scale(1.1);
+}
+
+.header {
+  background-color: #F7F7F7;
+  padding: 2rem 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+.nav-list .nav-link {
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+.nav-list .nav-link:hover {
+  color: #39FF14;
+}
+
+.hero {
+  height: 100vh;
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.about {
+  padding: 4rem 0;
+  background-color: #F7F7F7;
+  text-align: center;
+}
+.about .about-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.skills {
+  padding: 4rem 0;
+  background-color: #1A1A1A;
+  color: #fff;
+}
+.skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.skills .skill-card {
+  background-color: #2D9CDB;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+.skills .skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+.skills .skill-card i {
+  font-size: 3rem;
+}
+.skills .skill-card h3 {
+  margin-top: 1rem;
+}
+
+.projects {
+  padding: 4rem 0;
+  background-color: #F7F7F7;
+}
+.projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.projects .project-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+.projects .project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+.projects .project-card .project-img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #1A1A1A;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1rem;
+}/*# sourceMappingURL=styles.css.map */
